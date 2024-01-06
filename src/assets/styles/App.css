@@ -1,0 +1,215 @@
+
+.App {
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para el modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el fondo del modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Añade una animación de entrada para el modal */
+.modal-enter {
+  opacity: 0;
+  transform: translate(-50%, -60%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* Añade una animación de salida para el modal */
+.modal-exit {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transform: translate(-50%, -60%);
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-field,
+.textarea-field,
+.checkbox-field {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.edit-input,
+.edit-textarea,
+.checkbox-field {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.create-button,
+.cancel-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.cancel-button {
+  background-color: #f44336;
+}
+.notepad-container,
+.note-list-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.note-item {
+  box-sizing: border-box;
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.note-item:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.note-content {
+  cursor: pointer;
+}
+
+.note-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-actions button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.note-actions button:hover {
+  background-color: #d32f2f;
+}
+
+.view-mode {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-mode h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.view-mode p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.view-mode p:last-child {
+  margin-bottom: 0;
+}
+
+.view-mode .icon-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.view-mode .icon-buttons button.edit-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-mode .icon-buttons button.delete-button {
+  background-color: #f44336; /* Cambiado a rojo */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-mode .icon-buttons button:hover {
+  background-color: #d32f2f;
+}
